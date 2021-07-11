@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<!-- website configurations, title of the webpage and the corresponding CSS files per window size -->
+<head>
+	<title>  FIGHTSPORTS.online  </title>
+  <link rel="stylesheet" media="screen and (min-width: 1080px)" type= "text/css" href="widescreen.css">
+  <link rel="stylesheet" media="screen and (max-width: 1080px)" type= "text/css" href="smallscreen.css"> 
+  <link rel="stylesheet" media="screen and (max-device-width: 1080px)" type= "text/css" href="smallscreen.css">
+</head>
+
+<body><body background="background_blurred.jpg">
+
+<!-- title and logo -->
+<div id='sitename'><center>FIGHTSPORTS.online</center></div>
+<div><img id="logo" src="fist.png"></div>
+
+<!-- menu only shown on mobile (smaller than 480 px wide) -->
+<nav class="show-mobile">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="news.html">News</a></li>
+    <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Sports</a>
+    <div class="dropdown-content">
+      <a href="kickboxing.html">Kickbox</a>
+      <a href="taekwando.html">Taekwando</a>
+      <a href="jiu-jitsu.html">Jiu-Jitsu</a>
+    </div></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+</nav>
+
+<!-- menu for non mobile devices -->
+<nav class="hide-mobile">
+<div id='vertical-menu'>
+<div class="vertical-menu">
+  <a href="index.html">Home</a>
+  <a href="news.html">News</a> 
+  <a href="kickboxing.html">Kickboxing</a>
+  <a href="jiu-jitsu.html">Jiu-Jitsu</a>
+  <a href="taekwando.html">Taekwondo</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="contact.html" class="active">Contact</a>
+  <a href="feedback.html">Feedback</a>
+</div>
+</div>
+</nav>
+
+<!-- text field and its title -->
+<div id='titel1'>
+<h2><center>Contact</center></h2>
+</div>
+
+<!-- left text field in the 'titel1' textfield -->
+<div id='kop'><p>
+If you have further interest in the beautiful world of fighting or have any further
+questions, feel free to contact us at one or more of our following socials:
+<ol>
+    <ui>Email:    fightsports.online@gmail.com<br></li>
+    <ui>IG:       fightsports.online<br></li>
+    <ui>Facebook: official_fightsports_online<br></li>
+</ol>
+</p>
+</div>
+
+<!-- right text field + picture in the 'titel1' textfield-->
+<div id='img-or-gif'>
+<center><p> We are happy to help!</p>
+<a href='https://www.gmail.com'>
+<img id="square_image" src="contact.png"></a>
+</div>
+
+</body>
+</html>

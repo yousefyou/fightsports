@@ -1,0 +1,187 @@
+/* CSS file for mobile phone users. Horizontal menu bar with dropdown possibility*/
+
+
+/* setting that only shows the vertical menu based on large sized windows */
+@media only screen and (max-width: 1080px){
+    .show-mobile {
+        display: block;
+    }
+    .hide-mobile{
+        display: none;
+    }
+}
+
+/* setting that only shows the horizontal menu based on small sized windows */
+@media only screen and (min-width: 1080px){
+    .show-mobile {
+        display: none;
+    }
+    .hide-mobile{
+        display: block;
+    }
+}
+
+/* ------------------ HORIZONTAL MENU CONFIG -------------------- */
+
+/* settings for unordered list, in this case this is the horizontal menu with dropdown */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* settings for list items */
+li {
+    float: left;
+    font-size: 4vw;
+}
+
+/* settings for interacting with list items and the dropbutton */
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1.5vw 2vw;
+    text-decoration: none;
+}
+
+/* color of a list item for when the cursor hovers above the list item */
+li a:hover, .dropdown:hover .dropbtn{
+    background-color: #8A0808;
+}
+
+/* dropdown menu list item */
+li.dropdown {
+    display: inline-block;
+}
+
+/* active class for list item */
+li a.active {
+    background-color: #8A0808; 
+    color: white;
+}
+
+/* general settings for dropdown menu items */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* settings for dropdown menu items */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* settings for hovering over dropdown menu item with the cursor */
+.dropdown-content a:hover {
+    background-color: #8A0808;
+}
+
+/* class that communicates the visibility of the menu and the dropdown menu and its items */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* --------------------------------------------------------------------------------- */
+
+/* settings for positioning and size of the fist logo */
+#logo{
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    left: 12vw;
+    top: 11vw;
+    filter: invert();
+}
+
+/* settings for square shaped images */
+#square_image{
+    padding: 0.5vw;
+    width: 20vh;
+    height: 20vh;
+}
+
+/* settings for wide images */
+#horizontal_image{
+    padding: 0.5vw;
+    width: 40vw;
+    height: 20vw;
+}
+
+/* settings for unordered lists (used in the contact page) */
+ol {
+position: absolute;
+left: -5vw;
+font-size: 2.6vh;
+top: 23vh;
+}
+
+/* general settings for the body */
+body {
+color: white;
+font-family: Georgia, serif;
+}
+
+/* logo sizing and positioning */
+#sitename{
+    position: absolute;
+    font-size: 6.5vw;
+    top: 10.5vw;
+    left: 20vw;
+}
+
+/* text spacing containing the 'kop' text and the img/gif + text */
+#titel1 {
+position: absolute;
+font-size: 3vw;
+top: 20vw;
+bottom: 10vh;
+border: solid gray;
+border-radius: 50px;
+width: 93vw;
+left: 3vw;
+background: url(background4.png);
+}
+
+/* left text in the 'titel1' box */
+#kop {
+position: absolute;
+left: 6vw;
+width: 45vw;
+font-size: 2vh;
+top: 30vw;
+}
+
+/* right text in 'title1' box, where mostly a gif or image can be found */
+#img-or-gif {
+position: absolute;
+left: 51vw;
+top: 30vw;
+font-size: 2vh;
+width: 45vw;
+} 
+
+/* settings for text input field */
+input[type="text"]{
+    height: 2vh;
+    width: 25vw;
+}
+
+/* settings for buttons */
+.button {
+    position: absolute;
+    height: 5vh;
+    width: 20vw;
+    right: -28vw;
+    top: 38vh;
+    font-size: 2.5vw;
+}
+

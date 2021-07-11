@@ -1,0 +1,149 @@
+/* CSS File for wide screen users like: monitors, laptops & IPads */
+
+
+/* setting that only shows the vertical menu based on large sized windows */
+@media only screen and (max-width: 1080px){
+    .show-mobile {
+        display: block;
+    }
+    .hide-mobile{
+        display: none;
+    }
+}
+
+/* setting that only shows the horizontal menu based on small sized windows */
+@media only screen and (min-width: 1080px){
+    .show-mobile {
+        display: none;
+    }
+    .hide-mobile{
+        display: block;
+    }
+}
+
+/* specifications for the vertical menu*/
+.vertical-menu {
+    width: 25vh;
+}
+
+/* active settings for menu */
+.vertical-menu a {
+    background-color: rgb(66, 65, 65); 
+    color: white; 
+    display: block; 
+    padding: 0.3vh; 
+    width: 14vw;
+    height: 6.5vh;
+    text-decoration: none; 
+    border-left: 0.5vw solid rgb(66, 65, 65);
+}
+
+/* settings if the cursor hovers over an menu item */
+.vertical-menu a:hover {
+    background-color: #8A0808; 
+    border-left: 1vw solid #8A0808;
+}
+
+/* settings for menu items if a page is active */
+.vertical-menu a.active {
+    background-color: #8A0808; 
+    color: white;
+    border-left: 0.5vw solid #8A0808;
+}
+
+#vertical-menu {
+position: absolute;
+left: 3vw;
+top: 24.5vh;
+font-size: 2.5vw;
+}
+/* -------------------------------- */
+
+/* positioning of the logo */
+#logo{
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    left: 12vw;
+    top: 8vh;
+    filter: invert();
+}
+
+/* settings for square images */
+#square_image{
+    padding: 0.5vw;
+    width: 20vh;
+    height: 20vh;
+}
+
+/* settings for wide images */
+#horizontal_image{
+    padding: 0.5vw;
+    width: 20vw;
+    height: 10vw;
+}
+
+/* general text settings */
+body {
+color: white;
+font-family: Georgia, serif;
+}
+
+/* logo text with small black border */
+#sitename{
+    position: absolute;
+    color:white;
+    font-size: 6.5vw;
+    top: 6.5vh;
+    left: 20vw;
+    text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000;
+}
+
+/* text spacing containing the 'kop' text and the img/gif + text */
+#titel1 {
+position: absolute;
+font-size: 3vh;
+top: 24.5vh;
+height: 58vh;
+border: solid rgb(207, 202, 202);
+border-radius: 50px;
+width: 70vw;
+left: 25vw;
+background: url(background4.png);
+}
+
+/* left text in the 'titel1' box */
+#kop {
+position: absolute;
+right: 40vw;
+width: 30vw;
+font-size: 2.25vh;
+top: 35vh;
+}
+
+/* right text in 'title1' box, where mostly a gif or image can be found */
+#img-or-gif {
+position: absolute;
+right: 5.5vw;
+top: 35vh;
+font-size: 2.5vh;
+width: 30vw;
+} 
+
+/* settings for text input field */
+input[type="text"]{
+    height: 2vh;
+    width: 25vw;
+}
+
+/* settings for buttons */
+.button {
+    position: absolute;
+    height: 5vh;
+    width: 15vw;
+    right: -28vw;
+    top: 38vh;
+}

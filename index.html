@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<!-- website configurations, title of the webpage and the corresponding CSS files per window size -->
+<head>
+	<title>  FIGHTSPORTS.online  </title>
+	<link rel="stylesheet" media="screen and (min-width: 1080px)" type= "text/css" href="widescreen.css">
+  <link rel="stylesheet" media="screen and (max-width: 1080px)" type= "text/css" href="smallscreen.css">
+  <link rel="stylesheet" media="screen and (max-device-width: 1080px)" type= "text/css" href="smallscreen.css">
+</head>
+
+<body><body background="background_blurred.jpg">
+
+<!-- title and logo -->
+<div id='sitename'><center>FIGHTSPORTS.online</center></div>
+<div><img id="logo" src="fist.png"></div>
+
+<!-- menu only shown on mobile (smaller than 480 px wide) -->
+<nav class="show-mobile">
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="news.html">News</a></li>
+    <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Sports</a>
+    <div class="dropdown-content">
+      <a href="kickboxing.html">Kickbox</a>
+      <a href="taekwando.html">Taekwando</a>
+      <a href="jiu-jitsu.html">Jiu-Jitsu</a>
+    </div></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+</nav>
+
+<!-- menu for non mobile devices -->
+<nav class="hide-mobile">
+<div id='vertical-menu'>
+<div class="vertical-menu">
+  <a href="index.html" class="active">Home</a>
+  <a href="news.html">News</a> 
+  <a href="kickboxing.html">Kickboxing</a>
+  <a href="jiu-jitsu.html">Jiu-Jitsu</a>
+  <a href="taekwando.html">Taekwondo</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="contact.html">Contact</a>
+  <a href="feedback.html">Feedback</a>
+</div>
+</div>
+</nav>
+
+<!-- text field and its title -->
+<div id='titel1'>
+<h2><center>Home</center></h2>
+</div>
+
+<!-- left text field in the 'titel1' textfield -->
+<div id='kop'>		
+<p>This is the webpage of Yousef Younis for the Informatica Webapp. </p>
+<p>
+On this website multiple fighting sports are discussed. 
+MMA stands for Mixed Martial Arts. 
+These mixed martial arts are mostly: Kickboxing, Jiu-Jitsu and Taekwondo. 
+You can browse between the different sports on this website. </p>
+<p>
+There is also a quiz that you can do about the knowledge you have learned on this webpage!
+</p>
+</div>
+
+<!-- right text field in the 'titel1' textfield-->
+<div id='img-or-gif'>
+<center><p>A huge knock-out by a spinning hook kick in MMA.</p>
+<a href='https://www.youtube.com/watch?v=hXE-uwjSjhY&pbjreload=10'>
+<img id="horizontal_image" src="https://media3.giphy.com/media/asVYR8oh72pCE/200.gif#63-grid1.gif"></a>
+<p>If you want to see the whole fight, click on the gif.</p></center>
+</div>
+
+
+
+</body>
+</html>
